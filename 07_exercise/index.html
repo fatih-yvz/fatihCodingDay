@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+
+        function weekNumbersToWords(arr){
+            let result = [];
+            for(let i=0;i<arr.length;i++){
+
+                switch (arr[i]) {
+                    case 1:
+                       result.push('Monday') 
+                        break;
+                    case 2:
+                       result.push('Tuesday') 
+                        break;
+
+                    case 3:
+                       result.push('Wendsday') 
+                        break;
+
+                     case 4:
+                       result.push('Thursday') 
+                        break;
+                    case 5:
+                       result.push('Friday') 
+                        break;
+                    case 6:
+                       result.push('Saturday') 
+                        break;
+                    case 7:
+                       result.push('Sunday') 
+                        break;
+                    default:
+                        result.push(undefined)
+                        break;
+                }
+            }
+
+            return result;
+        }
+
+        console.log(weekNumbersToWords([1,2,7,6,2]))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
