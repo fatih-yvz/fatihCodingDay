@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#books{
+    display: flex;
+    flex-direction: column;
+}
+
+#books li{
+    list-style: none;
+}
+
+#addBooks{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}

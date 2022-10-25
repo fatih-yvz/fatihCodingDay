@@ -55,7 +55,7 @@ img {
 picture {
   margin-bottom: 1.5rem;
   min-width: 0;
-  max-width: none;
+  max-width: 200px;
 }
 
 .fig-2 {
@@ -105,40 +105,10 @@ picture {
   }
 }
 
+
 @media screen and (min-width: 64rem) {
-  .fig-2 {
-    display: block;
-  }
-
-  @supports (display: grid) {
-      /* Layout Elements */
-
-    main {
-      padding-right: 0vw;
-      padding-left: 0vw;
-
-      grid-template-areas: '. aside . fig-2 fig-2' 'title title banner banner banner' 'fig-1 main banner banner banner';
-      grid-template-rows: repeat(3 , auto);
-      grid-template-columns: repeat(5 , 1fr);
-    }
-
-    section {
-      -webkit-column-width: 12em;
-         -moz-column-width: 12em;
-              column-width: 12em;
-      -webkit-column-gap: 1.5rem;
-         -moz-column-gap: 1.5rem;
-              column-gap: 1.5rem;
-    }
-
-    picture {
-        max-width: 800px;
-    }
-
-    .fig-2 {
-      margin-bottom: .75rem;
-
-      grid-area: fig-2;
-    }
+  main{
+    display: flex;
+    flex-direction: column;
   }
 }
